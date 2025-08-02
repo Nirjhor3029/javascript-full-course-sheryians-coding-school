@@ -55,3 +55,70 @@ console.log(abcd);
 In this chapter, we learned about declaring variables using `var`, `let`, and `const`, the importance of initialization, and how scope and hoisting affect variable behavior.
 
 
+
+
+# Chapter 2: Data Types & Type System
+
+This chapter delves into the intricacies of JavaScript's data types and type system. It is essential to master these concepts to effectively manipulate data and understand JavaScript's behavior.
+
+## Key Concepts
+
+- **Primitive and Reference Data Types**: JavaScript data types are divided into primitive types (such as `number`, `string`, `boolean`, `null`, `undefined`, and `symbol`) and reference types (such as `object`, `array`, and `function`).
+
+- **Dynamic Typing**: JavaScript is dynamically typed, meaning variables can hold values of any data type, and the type is determined at runtime.
+
+- **`typeof` Operator**: The `typeof` operator is used to check the data type of a variable, though it has some quirks (e.g., `typeof null` returns `"object"`).
+
+- **Type Coercion & Conversion**: JavaScript can implicitly or explicitly convert values from one type to another, known as coercion. Explicit conversion can be done using functions like `Number()`, `String()`, etc.
+
+- **Truthy & Falsy Values**: In JavaScript, certain values are considered "truthy" or "falsy" in contexts requiring a boolean value. For example, `0`, `""`, `null`, `undefined`, and `NaN` are falsy.
+
+## Code Examples
+
+### Primitive and Reference Data Types
+
+```javascript
+let num = 42; // number
+let str = "Hello"; // string
+let isTrue = true; // boolean
+let obj = { name: "Alice" }; // object
+let arr = [1, 2, 3]; // array
+```
+
+### Dynamic Typing
+
+```javascript
+let variable = "I am a string";
+variable = 100; // Now it's a number
+```
+
+### `typeof` Operator
+
+```javascript
+console.log(typeof 42); // "number"
+console.log(typeof "Hello"); // "string"
+console.log(typeof null); // "object"
+```
+
+### Type Coercion & Conversion
+
+```javascript
+console.log("5" + 5); // "55" (string concatenation)
+console.log(Number("5") + 5); // 10 (explicit conversion)
+```
+
+### Truthy & Falsy Values
+
+```javascript
+if (0) {
+    console.log("This won't print, 0 is falsy");
+}
+
+if ("non-empty string") {
+    console.log("This will print, non-empty strings are truthy");
+}
+```
+
+## Summary
+
+This chapter covered the various data types in JavaScript, how dynamic typing works, the quirks of the `typeof` operator, type coercion, and the concepts of truthy and falsy values. Understanding these will aid in writing robust and predictable JavaScript code.
