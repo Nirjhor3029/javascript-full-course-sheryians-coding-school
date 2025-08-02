@@ -21,7 +21,7 @@ greet();
 // newMember();
 
 console.log(Nirjhor);
-var Nirjhor = "Hello Nirjhor";
+var Nirjhor = "Hello Nirjhor..";
 console.log(Nirjhor);
 
 
