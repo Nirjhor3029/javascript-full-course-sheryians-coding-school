@@ -277,3 +277,75 @@ console.log("hello" instanceof String); // false (primitive string)
 console.log(new String("hello") instanceof String); // true (String object)
 ```
 
+
+
+# JavaScript Control Flow
+
+## 1. `if`, `else if`, `else`
+- Executes code blocks based on boolean conditions.
+- Can chain multiple conditions using `else if`.
+- Optional `else` for fallback when no condition matches.
+
+### Syntax
+```js
+if (condition1) {
+    // code block 1
+} else if (condition2) {
+    // code block 2
+} else {
+    // fallback code block
+}
+```
+
+```js
+let score = 85;
+if (score >= 90) {
+    console.log("Grade A");
+}
+else if (score >= 80) {
+    console.log("Grade B");
+}
+else {
+    console.log("Grade C");
+}
+
+```
+
+## 2. `switch` Statement
+- Useful for checking a variable against multiple fixed values.
+- Each case is checked in order.
+- `break` prevents fall-through.
+- Optional `default` acts as fallback.
+
+### Syntax
+```js
+switch (expression) {
+    case value1:
+        // code block for value1
+        break;
+    case value2:
+        // code block for value2
+        break;
+    default:
+        // fallback code block
+}
+```
+
+```js
+let day = 2;
+switch (day) {
+    case 1:
+        console.log("Monday");
+        break;
+    case 2:
+        console.log("Tuesday");
+        break;
+    default:
+        console.log("Another day");
+}
+```
+
+
+### Syntax
+
+
